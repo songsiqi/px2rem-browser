@@ -1,0 +1,38 @@
+{
+    "name": "px2rem-browser",
+    "description": "A web version of px2rem which could run in a browser",
+    "version": "0.1.0",
+    "homepage": "https://github.com/songsiqi/px2rem-browser",
+    "author": {
+        "name": "songsiqi",
+        "email": "songsiqi2006@126.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:songsiqi/px2rem-browser.git"
+    },
+    "engines": {
+        "node": ">= 0.10.0"
+    },
+    "devDependencies": {
+        "px2rem": "~0.1.9",
+        "uglify-js": "^2.4.20",
+        "browserify": "^9.0.8"
+    },
+    "scripts": {
+        "mkdir-src": "rm -rf src && mkdir src",
+        "browserify": "browserify -r ./node_modules/px2rem/index.js:px2rem -o ./src/px2rem.js",
+        "mkdir-build": "rm -rf build && mkdir build",
+        "copy-rename": "cp ./src/px2rem.js ./build && cp ./build/px2rem.js ./build/px2rem.debug.js",
+        "uglify": "uglifyjs ./src/px2rem.js -mc -o ./build/px2rem.js",
+        "start": "npm run mkdir-src && npm run browserify && npm run mkdir-build && npm run copy-rename && npm run uglify"
+    },
+    "keywords": [
+        "3x",
+        "rem",
+        "px2rem",
+        "browser"
+    ],
+    "readmeFilename": "README.md",
+    "license": "MIT"
+}
