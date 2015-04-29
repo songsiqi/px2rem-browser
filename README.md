@@ -9,7 +9,6 @@ This is a web version of [px2rem](https://www.npmjs.com/package/px2rem) which co
 ```
 <script src="./build/px2rem.js"></script>
 <script>
-    var originCssText = ...;
     var Px2rem = require('px2rem');
     var px2rem = new Px2rem();
     var originCssText = '...';
