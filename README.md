@@ -1,6 +1,6 @@
 # px2rem-browser
 
-v0.1.0
+v0.1.1
 
 This is a web version of [px2rem](https://www.npmjs.com/package/px2rem) which could run in a browser.
 
@@ -20,5 +20,5 @@ This is a web version of [px2rem](https://www.npmjs.com/package/px2rem) which co
 
 ## Build
 
-Run `npm run` command.
+Run `npm start` command.
 
