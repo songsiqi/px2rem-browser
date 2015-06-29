@@ -1,6 +1,6 @@
 # px2rem-browser
 
-v0.1.1
+v0.1.2
 
 This is a web version of [px2rem](https://www.npmjs.com/package/px2rem) which could run in a browser.
 

@@ -1,7 +1,7 @@
 {
     "name": "px2rem-browser",
     "description": "A web version of px2rem which could run in a browser",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "homepage": "https://github.com/songsiqi/px2rem-browser",
     "author": {
         "name": "songsiqi",
@@ -15,7 +15,7 @@
         "node": ">= 0.10.0"
     },
     "devDependencies": {
-        "px2rem": "^0.2.0",
+        "px2rem": "~0.3.0",
         "uglify-js": "^2.4.20",
         "browserify": "^9.0.8"
     },

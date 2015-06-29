@@ -93,7 +93,7 @@ body {
         }
         var originCssText = $('#origin').innerText;
         var Px2rem = require('px2rem');
-        var px2rem = new Px2rem();
+        var px2rem = new Px2rem({remUnit: 64});
         $('#rem').innerText = px2rem.generateRem(originCssText);
         $('#one-x').innerText = px2rem.generateThree(originCssText, 1);
         $('#two-x').innerText = px2rem.generateThree(originCssText, 2);
